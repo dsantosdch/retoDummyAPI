@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.features.dummyAPI</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-10-24 09:40:57 a. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[2:15]"><span>[2:15]</span> <span>Get employee by id</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/features/dummyAPI.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">request the Dummy API</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:15]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">ignore</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:15]</span>
+                <span class="scenario-name">Get employee by id</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>18494</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:15]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://dummy.restapiexample.com/api/v1/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">144</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure retry = {count:5, interval:5000}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">65</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;employee/1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>retry until responseStatus == 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">18235</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">09:40:39.134 request:
+1 &gt; GET https://dummy.restapiexample.com/api/v1/employee/1
+1 &gt; Host: dummy.restapiexample.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:40:39.994 response time in milliseconds: 857
+1 &lt; 429
+1 &lt; Date: Tue, 24 Oct 2023 14:44:54 GMT
+1 &lt; Server: nginx/1.21.6
+1 &lt; Content-Type: text/html; charset=UTF-8
+1 &lt; X-RateLimit-Limit: 60
+1 &lt; X-RateLimit-Remaining: 57
+1 &lt; retry-after: 13
+1 &lt; x-ratelimit-reset: 1698158714
+1 &lt; Cache-Control: no-cache, private
+1 &lt; Vary: Accept-Encoding
+1 &lt; host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+1 &lt; X-Endurance-Cache-Level: 2
+1 &lt; X-nginx-cache: WordPress
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+
+        &lt;title&gt;Too Many Requests&lt;/title&gt;
+
+        &lt;!-- Fonts --&gt;
+        &lt;link rel=&quot;dns-prefetch&quot; href=&quot;//fonts.gstatic.com&quot;&gt;
+        &lt;link href=&quot;https://fonts.googleapis.com/css?family=Nunito&quot; rel=&quot;stylesheet&quot;&gt;
+
+        &lt;!-- Styles --&gt;
+        &lt;style&gt;
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: &#39;Nunito&#39;, sans-serif;
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .code {
+                border-right: 2px solid;
+                font-size: 26px;
+                padding: 0 15px 0 15px;
+                text-align: center;
+            }
+
+            .message {
+                font-size: 18px;
+                text-align: center;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;flex-center position-ref full-height&quot;&gt;
+            &lt;div class=&quot;code&quot;&gt;
+                429            &lt;/div&gt;
+
+            &lt;div class=&quot;message&quot; style=&quot;padding: 10px;&quot;&gt;
+                Too Many Requests            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+
+09:40:40.030 retry condition not satisfied: responseStatus == 200
+09:40:40.030 sleeping before retry #1
+09:40:45.043 request:
+2 &gt; GET https://dummy.restapiexample.com/api/v1/employee/1
+2 &gt; Host: dummy.restapiexample.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+09:40:45.635 response time in milliseconds: 592
+2 &lt; 429
+2 &lt; Date: Tue, 24 Oct 2023 14:44:59 GMT
+2 &lt; Server: nginx/1.21.6
+2 &lt; Content-Type: text/html; charset=UTF-8
+2 &lt; X-RateLimit-Limit: 60
+2 &lt; X-RateLimit-Remaining: 56
+2 &lt; retry-after: 7
+2 &lt; x-ratelimit-reset: 1698158714
+2 &lt; Cache-Control: no-cache, private
+2 &lt; Vary: Accept-Encoding
+2 &lt; host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+2 &lt; X-Endurance-Cache-Level: 2
+2 &lt; X-nginx-cache: WordPress
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+
+        &lt;title&gt;Too Many Requests&lt;/title&gt;
+
+        &lt;!-- Fonts --&gt;
+        &lt;link rel=&quot;dns-prefetch&quot; href=&quot;//fonts.gstatic.com&quot;&gt;
+        &lt;link href=&quot;https://fonts.googleapis.com/css?family=Nunito&quot; rel=&quot;stylesheet&quot;&gt;
+
+        &lt;!-- Styles --&gt;
+        &lt;style&gt;
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: &#39;Nunito&#39;, sans-serif;
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .code {
+                border-right: 2px solid;
+                font-size: 26px;
+                padding: 0 15px 0 15px;
+                text-align: center;
+            }
+
+            .message {
+                font-size: 18px;
+                text-align: center;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;flex-center position-ref full-height&quot;&gt;
+            &lt;div class=&quot;code&quot;&gt;
+                429            &lt;/div&gt;
+
+            &lt;div class=&quot;message&quot; style=&quot;padding: 10px;&quot;&gt;
+                Too Many Requests            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+
+09:40:45.641 retry condition not satisfied: responseStatus == 200
+09:40:45.641 sleeping before retry #2
+09:40:50.650 request:
+3 &gt; GET https://dummy.restapiexample.com/api/v1/employee/1
+3 &gt; Host: dummy.restapiexample.com
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+3 &gt; Accept-Encoding: gzip,deflate
+
+
+09:40:51.375 response time in milliseconds: 724
+3 &lt; 429
+3 &lt; Date: Tue, 24 Oct 2023 14:45:05 GMT
+3 &lt; Server: nginx/1.21.6
+3 &lt; Content-Type: text/html; charset=UTF-8
+3 &lt; X-RateLimit-Limit: 60
+3 &lt; X-RateLimit-Remaining: 55
+3 &lt; retry-after: 2
+3 &lt; x-ratelimit-reset: 1698158714
+3 &lt; Cache-Control: no-cache, private
+3 &lt; Vary: Accept-Encoding
+3 &lt; host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+3 &lt; X-Endurance-Cache-Level: 2
+3 &lt; X-nginx-cache: WordPress
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+
+        &lt;title&gt;Too Many Requests&lt;/title&gt;
+
+        &lt;!-- Fonts --&gt;
+        &lt;link rel=&quot;dns-prefetch&quot; href=&quot;//fonts.gstatic.com&quot;&gt;
+        &lt;link href=&quot;https://fonts.googleapis.com/css?family=Nunito&quot; rel=&quot;stylesheet&quot;&gt;
+
+        &lt;!-- Styles --&gt;
+        &lt;style&gt;
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: &#39;Nunito&#39;, sans-serif;
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .code {
+                border-right: 2px solid;
+                font-size: 26px;
+                padding: 0 15px 0 15px;
+                text-align: center;
+            }
+
+            .message {
+                font-size: 18px;
+                text-align: center;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;flex-center position-ref full-height&quot;&gt;
+            &lt;div class=&quot;code&quot;&gt;
+                429            &lt;/div&gt;
+
+            &lt;div class=&quot;message&quot; style=&quot;padding: 10px;&quot;&gt;
+                Too Many Requests            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+
+09:40:51.380 retry condition not satisfied: responseStatus == 200
+09:40:51.381 sleeping before retry #3
+09:40:56.405 request:
+4 &gt; GET https://dummy.restapiexample.com/api/v1/employee/1
+4 &gt; Host: dummy.restapiexample.com
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+4 &gt; Accept-Encoding: gzip,deflate
+
+
+09:40:56.991 response time in milliseconds: 586
+4 &lt; 200
+4 &lt; Date: Tue, 24 Oct 2023 14:45:11 GMT
+4 &lt; Server: nginx/1.21.6
+4 &lt; Content-Type: application/json
+4 &lt; Cache-Control: no-cache, private
+4 &lt; Cache-Control: max-age=21600
+4 &lt; X-RateLimit-Limit: 60
+4 &lt; X-RateLimit-Remaining: 58
+4 &lt; Expires: Tue, 24 Oct 2023 20:45:18 GMT
+4 &lt; Vary: Accept-Encoding
+4 &lt; host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+4 &lt; X-Endurance-Cache-Level: 2
+4 &lt; X-nginx-cache: WordPress
+4 &lt; X-Server-Cache: true
+4 &lt; X-Proxy-Cache: MISS
+{&quot;status&quot;:&quot;success&quot;,&quot;data&quot;:{&quot;id&quot;:1,&quot;employee_name&quot;:&quot;Tiger Nixon&quot;,&quot;employee_salary&quot;:320800,&quot;employee_age&quot;:61,&quot;profile_image&quot;:&quot;&quot;},&quot;message&quot;:&quot;Successfully! Record has been fetched.&quot;}
+
+09:40:56.998 retry condition satisfied
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref failed">20</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response contains {&quot;status&quot;:&quot;success&quot;,&quot;data&quot;:{&quot;id&quot;:1,&quot;employee_name&quot;:&quot;Tiger Nixon&quot;,&quot;employee_salary&quot;:320800}}</span>
+      </div>
+    </div>
+    <div class="time-cell failed">43</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">09:40:57.048 src/test/java/features/dummyAPI.feature:20
+And match response contains {&quot;status&quot;:&quot;success&quot;,&quot;data&quot;:{&quot;id&quot;:1,&quot;employee_name&quot;:&quot;Tiger Nixon&quot;,&quot;employee_salary&quot;:320800}}
+match failed: CONTAINS
+  $ | actual does not contain expected | all key-values did not match, expected has un-matched keys - [data] (MAP:MAP)
+  {&quot;status&quot;:&quot;success&quot;,&quot;data&quot;:{&quot;id&quot;:1,&quot;employee_name&quot;:&quot;Tiger Nixon&quot;,&quot;employee_salary&quot;:320800,&quot;employee_age&quot;:61,&quot;profile_image&quot;:&quot;&quot;},&quot;message&quot;:&quot;Successfully! Record has been fetched.&quot;}
+  {&quot;status&quot;:&quot;success&quot;,&quot;data&quot;:{&quot;id&quot;:1,&quot;employee_name&quot;:&quot;Tiger Nixon&quot;,&quot;employee_salary&quot;:320800}}
+
+    $.data | not equal | actual has 2 more key(s) than expected - {&quot;employee_age&quot;:61,&quot;profile_image&quot;:&quot;&quot;} (MAP:MAP)
+    {&quot;id&quot;:1,&quot;employee_name&quot;:&quot;Tiger Nixon&quot;,&quot;employee_salary&quot;:320800,&quot;employee_age&quot;:61,&quot;profile_image&quot;:&quot;&quot;}
+    {&quot;id&quot;:1,&quot;employee_name&quot;:&quot;Tiger Nixon&quot;,&quot;employee_salary&quot;:320800}
+
+
+src/test/java/features/dummyAPI.feature:20
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref skipped">21</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
